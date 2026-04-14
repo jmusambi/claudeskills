@@ -1,0 +1,23 @@
+{
+  "name": "growthskills",
+  "version": "1.0.0",
+  "description": "Install AI marketing skills to make your AI tools think like specialist growth marketers.",
+  "bin": {
+    "growthskills": "./index.js"
+  },
+  "keywords": [
+    "marketing",
+    "ai",
+    "skills",
+    "growth",
+    "claude",
+    "chatgpt",
+    "cursor"
+  ],
+  "author": "Joel Musambi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joelmusambi/growthskills"
+  }
+}
