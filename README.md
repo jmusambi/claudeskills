@@ -38,6 +38,8 @@ npx growthskills add demand-gen-engine
 | 20 | marketing-tech-stack | Marketing Ops |
 | 21 | pricing-strategy | Strategy |
 | 22 | revenue-intelligence | AI & Agents |
+| 23 | outbound-sales-automation | Lead Gen |
+| 24 | marketing-plan-framework | Strategy |
 
 ## Works with
 
