@@ -371,7 +371,7 @@ For businesses with multi-step conversion flows (booking, application, checkout)
 
 When communicating savings, discounts, or value comparisons, visual demonstrations dramatically outperform text-based claims.
 
-**Example test result:** Replacing a text-based savings claim ("Save $200 by inviting friends") with a visual demonstration (animated calculator showing the savings accumulate as friends are added) increased invite rates by 700%.
+**Example test result:** Replacing a text-based savings claim ("Save $200 by inviting friends") with a visual demonstration (animated calculator showing the savings accumulate as friends are added) increased invite rates by several multiples.
 
 **Why visual savings work:**
 - Text claims are abstract -- "Save 30%" is a cognitive exercise

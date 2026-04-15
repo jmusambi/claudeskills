@@ -7,7 +7,7 @@ access: free
 
 # Acquisition Channels — Evaluating and Selecting Marketing Channels
 
-This playbook covers how to systematically evaluate and select acquisition channels for any B2B company. The framework has been used to identify winning channels that increased lead gen by 1000%+ at multiple companies.
+This playbook covers how to systematically evaluate and select acquisition channels for any B2B company. This framework has been used to systematically identify winning channels and dramatically increase lead generation.
 
 ## Core Principle: Every Company Is Different
 
@@ -112,7 +112,7 @@ Select 3-4 channels for initial testing. Run each for at least 60-90 days before
 
 Email is the primary acquisition channel for most B2B companies because:
 - Near-zero variable cost
-- Highest conversion rates from email to webinar registration (~50%)
+- Strong conversion rates from email to webinar registration
 - You own the channel (no algorithm changes)
 - Scales with your list size
 
@@ -137,7 +137,7 @@ Google Ads works for B2B when targeting keywords that match actual search intent
 - **Don't:** Bid on broad keywords that are technically related but used by non-buyers
 - **Test:** Use the Ad Preview and Diagnosis Tool before adding keywords
 
-You can often reduce Google Ads spend by 60% while producing better results by focusing on the right keywords instead of broad agency-selected terms.
+You can often significantly reduce Google Ads spend while producing better results by focusing on the right keywords instead of broad agency-selected terms.
 
 **Use top-converting paid keywords to inform your organic SEO strategy.** If "clean up Salesforce" converts at 8% in paid, write content targeting that keyword organically.
 

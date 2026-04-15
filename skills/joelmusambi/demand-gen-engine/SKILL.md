@@ -7,7 +7,7 @@ access: free
 
 # Demand Gen Engine — Building B2B Demand Generation from Scratch
 
-This is a complete playbook for building a demand generation engine at a B2B company, whether you're the first marketer or inheriting a broken system. This framework has been used to increase lead generation by 1000-1400% at multiple companies.
+This is a complete playbook for building a demand generation engine at a B2B company, whether you're the first marketer or inheriting a broken system. This framework has been used to dramatically increase lead generation at multiple companies.
 
 ## Core Principle: Start with a Blank Slate
 
@@ -202,7 +202,7 @@ This should be updated monthly and shared with leadership.
 ### Reducing Spend While Improving Results
 
 It's common to find that a previous team or agency was overspending on underperforming channels. After auditing, you may find you can:
-- Reduce Google Ads spend by 60% while producing better results by focusing on the right keywords
+- Significantly reduce Google Ads spend while producing better results by focusing on the right keywords
 - Shift budget to channels with proven ROI
 - Eliminate campaigns that produce unqualified leads
 
@@ -243,7 +243,7 @@ The content writer needs storytelling capabilities and understanding of the buye
 - **Month 7-9** — Scaled campaigns, lead scoring implementation
 - **Month 9-12** — Mature engine producing consistent pipeline
 
-With this framework, 1000%+ lead generation growth in 9-12 months is achievable. The key is disciplined execution of each phase in sequence — don't skip ahead to running ads before your data infrastructure is clean.
+With this framework, significant lead generation growth in 9-12 months is achievable. The key is disciplined execution of each phase in sequence — don't skip ahead to running ads before your data infrastructure is clean.
 
 ## Common Mistakes to Avoid
 

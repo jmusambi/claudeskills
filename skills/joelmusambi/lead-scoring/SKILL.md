@@ -43,7 +43,7 @@ Before writing a single scoring rule, build a spreadsheet that connects lead beh
 
 Add a column for company lead status (active customer, lost deal, open opportunity, dormant lead) and create a formula to determine if there's a correlation between total engagement score and deal outcome.
 
-**In practice, this correlation analysis typically shows that 90% of positive lead statuses match high engagement scores.** This validates that behavior-based scoring works for your business.
+**In practice, this correlation analysis often shows that 80-90% of positive lead statuses correlate with high engagement scores.** This validates that behavior-based scoring works for your business.
 
 ### What to Look For
 

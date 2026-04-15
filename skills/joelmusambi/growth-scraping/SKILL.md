@@ -250,11 +250,7 @@ The first email to a scraped list should be:
 - Short (under 100 words)
 - End with a simple question that invites reply
 
-**Expected metrics when preceded by social awareness:**
-- Open rate: 50%+
-- Click-through rate: 7%+
-- Click-to-open rate: 15%+
-- Unsubscribes: Near zero
+Email performance improves when preceded by social awareness campaigns — open rates, click-through rates, and unsubscribe rates all trend favorably compared to cold outreach. Results vary by list quality and targeting precision.
 
 ### Post-Opt-In Automation
 

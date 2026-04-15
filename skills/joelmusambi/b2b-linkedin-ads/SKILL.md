@@ -22,7 +22,7 @@ LinkedIn is often the best B2B ad platform. But only when targeting and creative
 
 - LinkedIn has the most accurate professional targeting data of any ad platform. Job title, company size, industry, seniority, function, skills, and group membership are all self-reported and verified by professional context.
 - B2B buyers spend time on LinkedIn. Unlike Facebook or Instagram where B2B ads feel intrusive, LinkedIn users expect professional content and are receptive to it.
-- LinkedIn's cost per engagement (CPE) has decreased over recent years, making it more viable for mid-market budgets than it was 3-5 years ago.
+- LinkedIn's cost per engagement (CPE) has decreased over recent years, making it more viable for mid-market budgets.
 - Large professional audiences for specific verticals: healthcare professionals, financial advisors, engineers, consultants, operations leaders. If your target audience has a professional identity, they are on LinkedIn and they are engaged.
 
 ### When LinkedIn Is NOT the Right Channel

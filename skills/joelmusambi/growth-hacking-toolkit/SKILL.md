@@ -176,7 +176,7 @@ Lock premium features behind social sharing actions instead of (or in addition t
 
 - 20-35% of users will complete at least one sharing action when a desirable feature is gated.
 - Each sharing action generates 0.3-0.8 new signups on average.
-- Users who unlock features via sharing have 40% higher retention than users who received the feature for free.
+- Users who unlock features via sharing tend to have meaningfully higher retention than users who received the feature for free.
 
 ### What to Gate
 
@@ -239,7 +239,7 @@ Steal your customers' language from competitor reviews to write ad copy that res
 ### Why This Works
 
 - Customers describe problems in their own language, which is different from how marketers describe them.
-- Using customer language in ads increases click-through rates by 20-40% compared to internally-written copy.
+- Using customer language in ads consistently outperforms internally-written copy on click-through rate.
 - Review language reveals the actual decision criteria buyers use, not the criteria you think they use.
 
 ### Advanced Application
@@ -324,7 +324,7 @@ Monitor social media for buying signals and cross-reference with your email list
 
 ### Conversion Impact
 
-- Leads contacted within 1 hour of posting a buying signal convert at 3-5x the rate of standard outreach.
+- Leads contacted within 1 hour of posting a buying signal convert at significantly higher rates than standard outreach.
 - This tactic works especially well in niche B2B markets where the audience is small enough to monitor manually.
 
 ---
