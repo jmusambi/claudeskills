@@ -32,8 +32,8 @@ The single highest-ROI growth hack in B2B is building a free tool that solves a 
 
 - The tool should take less than 60 seconds to use and deliver instant value.
 - Examples of effective free tools: website graders, ROI calculators, compliance checkers, headline analyzers, email subject line testers.
-- Conversion rate benchmark: a well-built free tool converts 15-30% of visitors to leads.
-- Of those leads, expect 3-8% to convert to sales-qualified opportunities within 90 days.
+- A well-built free tool can meaningfully increase your visitor-to-lead conversion rate.
+- Ensure you have a follow-up nurture campaign for these leads to convert them to sales-qualified opportunities.
 - The tool itself becomes a content marketing asset. It earns backlinks, social shares, and organic traffic.
 
 ### Key Metrics to Track
@@ -42,7 +42,7 @@ The single highest-ROI growth hack in B2B is building a free tool that solves a 
 - Email capture rate (visitors to leads)
 - Lead-to-SQL conversion rate
 - Pipeline attributed to free tool leads
-- Cost per lead vs. paid channels (typically 70-90% lower)
+- Cost per lead vs. paid channels
 
 ### Common Mistakes
 
@@ -77,7 +77,7 @@ Waitlists are not just for product launches. They are growth engines when paired
 - Average viral coefficient (K-factor) for a well-executed waitlist: 1.2-2.5
 - That means every signup generates 1.2-2.5 additional signups on average.
 - Top-performing waitlists have generated 100,000+ signups from an initial seed of 500-1,000 people.
-- Email open rates on waitlist updates: 45-65% (much higher than typical marketing emails).
+- Email open rates on waitlist updates are typically higher than standard marketing emails.
 
 ### Tools for Execution
 

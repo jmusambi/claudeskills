@@ -22,56 +22,7 @@ export default function Hero() {
           executing.
         </p>
 
-        {/* Terminal */}
-        <div className="bg-surface border border-border rounded-xl p-4 font-mono text-sm max-w-lg mx-auto mb-4 glow-ring">
-          <div className="flex items-center gap-2 text-muted mb-2">
-            <div className="flex gap-1.5">
-              <span className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-              <span className="w-3 h-3 rounded-full bg-[#febc2e]" />
-              <span className="w-3 h-3 rounded-full bg-[#28c840]" />
-            </div>
-            <span className="text-xs">terminal</span>
-          </div>
-          <div className="text-muted">
-            <span className="text-accent">$</span>{" "}
-            <span className="text-foreground">
-              npx growthskills add demand-gen-engine
-            </span>
-          </div>
-          <div className="mt-1 text-emerald-400 text-xs">
-            ✓ Installed demand-gen-engine to ./skills/
-          </div>
-        </div>
-        <p className="text-xs text-muted mb-12">
-          One line in your terminal. That&apos;s it. Works with any AI coding tool.
-        </p>
-
-        {/* Compatibility badges */}
-        <div className="mb-16">
-          <p className="text-xs text-muted mb-3 uppercase tracking-wider">
-            Compatible with
-          </p>
-          <div className="flex flex-wrap justify-center gap-2 text-xs text-muted">
-            {[
-              "Claude Code",
-              "Claude Projects",
-              "ChatGPT",
-              "Cursor",
-              "Replit",
-              "Lovable",
-              "Copilot",
-              "Perplexity",
-              "Codex",
-            ].map((tool) => (
-              <span
-                key={tool}
-                className="bg-surface/80 border border-border rounded-full px-3 py-1 backdrop-blur-sm"
-              >
-                {tool}
-              </span>
-            ))}
-          </div>
-        </div>
+        <div className="mb-16" />
       </div>
 
       {/* Built by section — below hero, centered */}

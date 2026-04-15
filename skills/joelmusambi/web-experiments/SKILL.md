@@ -138,8 +138,8 @@ This is one of the highest-ROI experiments you can run.
 **The fix:** Add content behind each element. When visitors click a feature icon, they see a detailed description, benefits, and a CTA.
 
 **Typical results:**
-- Bounce rate decreases 15-25%
-- Pages per session increases 20-40%
+- Bounce rate decreased
+- Pages per session increased
 - Visitors gain better product understanding
 - Sales team has data on which features generate most interest
 

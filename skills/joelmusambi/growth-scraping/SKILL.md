@@ -199,7 +199,7 @@ Once you have your scraped list, the campaign follows this sequence:
 
 3. **Launch email campaign**
    - First email should be personalized and relevant
-   - Open rates are dramatically higher when the recipient has already seen your brand on social (56%+ open rates have been achieved with this approach vs. standard cold email rates of 15-25%)
+   - Open rates may be significantly higher when the recipient has already seen your brand on social media compared to standard cold email
    - No unsubscribes when brand awareness precedes email
 
 4. **Segment and nurture**
@@ -211,9 +211,9 @@ Once you have your scraped list, the campaign follows this sequence:
 
 Without the initial social media awareness campaign, your first email campaign looks like any other cold email. With prior brand exposure:
 - Recipients recognize your company name
-- Open rates are 2-3x higher
-- Click rates improve significantly
-- Unsubscribe rates drop to near zero
+- Open rates may be higher
+- Click rates may be higher
+- Unsubscribe rates may decrease
 
 ## Phase 5: Custom Audience Targeting from Scraped Lists
 

@@ -272,7 +272,7 @@ True AI-driven email personalization goes beyond inserting `{first_name}` and `{
 
 ### Maximum Response Rate Format
 
-The 9-word email is the highest-response-rate email format for re-engaging cold or lapsed contacts.
+The 9-word email is a format worth testing to re-engage cold or lapsed contacts.
 
 **Format:** A short, casual, direct question that sounds like it was typed by a human in 10 seconds.
 
@@ -303,7 +303,7 @@ The 9-word email is the highest-response-rate email format for re-engaging cold 
 
 ### Driving Webinar and Event Registrations
 
-Email is consistently the number-one acquisition channel for webinars and virtual events, with near 50% conversion rate from email to webinar registration when the list is properly warmed and segmented.
+Email is consistently one of the strongest acquisition channels for webinar and event registrations, especially when the list is properly warmed and segmented.
 
 **Webinar promotion email sequence:**
 1. **Announcement (14 days before):** Introduce the topic, speaker, and key takeaway

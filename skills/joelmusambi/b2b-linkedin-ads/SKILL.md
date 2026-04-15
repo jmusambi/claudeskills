@@ -34,7 +34,7 @@ LinkedIn is often the best B2B ad platform. But only when targeting and creative
 
 ---
 
-## 2. The Journey: 1550% LinkedIn Lead Gen Increase
+## 2. How to Increase LinkedIn Lead Gen
 
 Here is how to transform LinkedIn from an underperforming channel to your number one digital pipeline driver.
 
@@ -61,7 +61,7 @@ Here is how to transform LinkedIn from an underperforming channel to your number
 
 - CPL reduced to $94 (from $300+).
 - LinkedIn became the number one digital channel for lead generation.
-- Lead gen volume increased by 1550%.
+- Lead gen volume increased significantly.
 - Lead quality improved because targeting was precise enough to reach actual decision-makers and influencers.
 
 ---
@@ -158,7 +158,7 @@ and rebuilt the strategy from scratch:
 → Ran 10 experiments simultaneously
 → Doubled down on the 3 that worked
 
-Result: CPL dropped to $94. Volume increased 1550%.
+Result: CPL dropped to $94. Volume increased dramatically.
 
 Download the targeting framework we used. [Link]
 ```
@@ -229,7 +229,7 @@ LinkedIn allows you to upload contact lists (emails) or company lists (company n
 
 One of the most powerful uses of Matched Audiences: target content to custom audiences of existing leads and prospects for awareness BEFORE sales outreach.
 
-When the sales email arrives, the prospect already recognizes your brand from seeing your ads in their LinkedIn feed. This pre-awareness increases email open rates by 15-25% and reply rates by 30-50% compared to cold outreach with no prior ad exposure.
+When the sales email arrives, the prospect already recognizes your brand from seeing your ads in their LinkedIn feed. This pre-awareness approach can help increase email open rates and reply rates compared to cold outreach with no prior ad exposure.
 
 ### Setup Steps
 

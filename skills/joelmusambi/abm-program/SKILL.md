@@ -38,8 +38,8 @@ The most powerful target lists come from cross-referencing multiple data sources
 1. **CRM data** — Current leads, contacts, past opportunities (won and lost)
 2. **Web visitor identification** — Tools like Snitcher or similar that show which companies visit your site
 3. **Email engagement data** — Opens, clicks, replies from marketing and sales sequences
-4. **Job posting feeds** — Companies actively hiring for roles that signal need for your product
-5. **Competitor analysis** — Which companies use competitor products (check public data, review sites, job postings mentioning competitor tools)
+4. **Intent signal feeds** — Companies showing buying signals such as technology adoption changes, budget cycle timing, expansion announcements, RFP activity, or contract renewal windows
+5. **Competitor analysis** — Which companies use competitor products (check public data, review sites, technology directories)
 6. **Industry data** — Conference attendee lists, association memberships, RFP databases
 7. **Government/public records** — Purchase orders, budget documents, board meeting minutes
 8. **Sales engagement platforms** — Hot leads identified by SDRs
@@ -53,7 +53,7 @@ Find companies that:
 - Have visited our website in the last 90 days
 - Are NOT current customers
 - Do NOT have an open opportunity
-- Have job postings for roles relevant to our product
+- Show intent signals relevant to our product (technology changes, expansion, RFP activity)
 - Have an Operations/IT/Finance contact on file
 ```
 
@@ -93,7 +93,7 @@ Each ABM sequence should include multiple channels:
 
 Sequences themed around specific pain points convert better than generic outreach. Instead of one sequence for all prospects, create themed variations:
 
-- **Staffing shortage theme** — For accounts with active job postings
+- **Resource constraint theme** — For accounts showing signs of capacity challenges or scaling needs
 - **Budget optimization theme** — For accounts in budget planning cycles
 - **Compliance theme** — For accounts in regulated industries
 - **Growth theme** — For accounts that recently received funding or expanded
@@ -106,7 +106,7 @@ Before any sales meeting, combine 12+ data sources to produce an intelligence re
 2. **CRM history** — Past interactions, previous opportunities, notes
 3. **Web visit data** — Pages visited, frequency, recency
 4. **Email engagement** — Which emails opened, clicked, replied
-5. **Job postings** — Current openings that signal need
+5. **Intent signals** — Technology adoption changes, expansion activity, or RFP indicators
 6. **Purchase history** — Government purchase orders, vendor data
 7. **Board meeting transcripts** — Public decision-making context
 8. **Conference attendance** — Which events they attend
@@ -171,16 +171,18 @@ When a target account shows high-intent signals, immediately:
 3. Turn on retargeting ads for that account
 4. Add to high-priority list for direct outreach
 
-### Job Posting Intelligence
+### Intent Signal Intelligence
 
-Monitor target accounts for job postings that signal need:
-- Posting for a role your product replaces or supports
-- Multiple postings in a short period (urgency signal)
-- Postings with urgency language ("immediate," "ASAP," "backfill")
+Monitor target accounts for signals that indicate buying readiness:
+- Technology adoption changes (new tools, platform migrations, vendor evaluations)
+- Budget cycle indicators (fiscal year timing, budget approval announcements)
+- Expansion signals (new office locations, market entry, team growth)
+- RFP activity or contract renewal windows
+- Multiple signals in a short period (urgency indicator)
 
 Cross-reference with your product's value proposition:
 ```
-IF target_account has job_posting for relevant_role
+IF target_account shows relevant_intent_signal
 AND target_account visited_website in last 90 days
 AND target_account is NOT current_customer
 THEN urgency_score = HIGH
@@ -198,7 +200,7 @@ Since traditional B2B buyers prefer email replies:
 - Ask a simple question at the end that invites a reply
 - Share a relevant insight specific to their situation
 - Keep it under 150 words
-- Reference a specific signal (their job posting, website visit, industry trend)
+- Reference a specific signal (their technology change, website visit, industry trend)
 
 **Don't:**
 - Send HTML-heavy marketing emails
@@ -209,18 +211,18 @@ Since traditional B2B buyers prefer email replies:
 
 ### Email Templates by Signal
 
-**Job posting detected:**
+**Intent signal detected:**
 ```
-Subject: Quick question about your [Role] opening
+Subject: Quick question about [relevant initiative]
 
 Hi [Name],
 
-I noticed you're looking for a [Role] — wanted to reach out because
-we work with [industry] organizations that face similar [challenge].
+I noticed [Company] is [expanding / evaluating new solutions /
+entering a new market] — wanted to reach out because we work with
+[industry] organizations navigating similar [challenge].
 
-We've helped companies fill that gap [without permanent headcount /
-with a technology solution / etc.]. Wanted to see if it's worth a
-quick conversation.
+We've helped companies address that with [relevant solution /
+approach]. Wanted to see if it's worth a quick conversation.
 
 Are you open to chatting this week?
 ```

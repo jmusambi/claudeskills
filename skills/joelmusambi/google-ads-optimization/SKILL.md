@@ -368,14 +368,14 @@ For ecommerce or SaaS with free trials, retarget website visitors who did not co
 
 A common pattern: an agency running campaigns at high spend with high CPL and unqualified leads. The typical fixes when taking over an underperforming account:
 
-1. **Audit search terms report** -- usually reveals 40-60% of spend going to irrelevant queries
+1. **Audit search terms report** -- often reveals significant spend going to irrelevant queries
 2. **Add negative keywords aggressively** -- build a comprehensive negative keyword list from wasted spend
 3. **Restructure match types** -- agencies often over-rely on broad match for volume
 4. **Fix conversion tracking** -- frequently misconfigured (counting page views as conversions, double-counting, missing offline conversions)
 5. **Reduce geographic targeting** -- agencies often target too broadly to inflate impression numbers
 6. **Rebuild landing pages** -- agencies rarely optimize landing pages because it is outside their scope
 
-**Typical result:** Reducing spend by 50-60% while producing better results with positive ROI by eliminating waste and focusing budget on the keywords and audiences that actually convert. The previous high spend was masking inefficiency -- more spend does not equal more results when targeting and tracking are broken.
+**Typical result:** Reducing wasted spend while producing better results with positive ROI by eliminating waste and focusing budget on the keywords and audiences that actually convert. High spend often masks inefficiency — more spend does not equal more results when targeting and tracking are broken.
 
 ---
 

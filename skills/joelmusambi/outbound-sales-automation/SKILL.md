@@ -13,7 +13,7 @@ access: paid
 
 # Outbound Sales Automation
 
-A complete playbook for building an automated outbound engine that transforms anonymous website traffic and market signals into qualified meetings. This is not about blasting lists with generic templates. It is about building a system where every outreach message is researched, relevant, and timed to actual buying signals — producing consistent 50%+ open rates, 10-15% response rates, and 2-4 qualified calls per day at scale.
+A complete playbook for building an automated outbound engine that transforms anonymous website traffic and market signals into qualified meetings. This is not about blasting lists with generic templates. It is about building a system where every outreach message is researched, relevant, and timed to actual buying signals — producing consistently higher open rates, improved response rates, and qualified calls per day at scale.
 
 ---
 
@@ -141,8 +141,8 @@ True programmatic personalization uses enrichment data to construct emails with 
 
 Each email reads like it was written by someone who spent 15 minutes researching the prospect. The AI assembled it from enriched data fields in seconds. At volume, this produces:
 
-- 50%+ open rates (because subject lines are contextually relevant)
-- 10-15% response rates on cold first-touch emails
+- Higher open rates (because subject lines are contextually relevant)
+- Improved response rates on cold first-touch emails compared to generic outreach
 - Dramatically higher positive sentiment in responses (prospects respond with "how did you know?" not "take me off your list")
 
 The key principle: personalization is not about the prospect's name. It is about demonstrating that you understand their specific situation and have a relevant reason for reaching out.

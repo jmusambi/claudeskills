@@ -186,12 +186,7 @@ This is the highest-leverage technique in the custom audiences playbook: running
 
 Running social awareness campaigns before the first email campaign produced:
 
-- **56.79% open rate** on the first email send
-- **7.41% click-through rate** (CTR)
-- **15.21% click-to-open rate** (CTO)
-- **Zero unsubscribes** on the first send
-
-For context, B2B email benchmarks typically show 15-25% open rates and 2-3% CTR. The audience warming approach delivered 2-3x the benchmark open rate and 2.5-3.5x the benchmark CTR.
+Running social awareness campaigns before the first email campaign produced higher-than-benchmark open rates, click-through rates, and click-to-open rates, with zero unsubscribes on the first send. The audience warming approach delivered meaningfully better results than cold outreach across all key email metrics.
 
 **Why this works psychologically:**
 - Mere exposure effect: repeated exposure to a stimulus increases preference for it
