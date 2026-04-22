@@ -40,7 +40,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-muted">
               <li>
                 <a
-                  href="https://github.com/joelmusambi/growthskills"
+                  href="https://github.com/jmusambi/claudeskills"
                   className="hover:text-foreground transition-colors"
                 >
                   GitHub
