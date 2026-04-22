@@ -363,7 +363,7 @@ At some point, you will need to migrate from one platform to another. This is on
 ### Migration Planning Checklist
 
 1. **Data audit**: What data exists in the current platform? Contacts, email history, automation workflows, forms, landing pages, tracking data, integrations.
-2. **Data cleaning**: Migrate is your opportunity to clean. Remove duplicates, standardize fields, archive stale contacts.
+2. **Data cleaning**: Migration is your opportunity to clean. Remove duplicates, standardize fields, archive stale contacts.
 3. **Field mapping**: Map every field in the old platform to a field in the new platform. Document fields that do not have a direct match.
 4. **Automation recreation**: Document every automation workflow in the old platform. Recreate in the new platform. Test each one.
 5. **Integration reconnection**: Every integration must be rebuilt. CRM sync, ad platform connections, webinar tools, form handlers.

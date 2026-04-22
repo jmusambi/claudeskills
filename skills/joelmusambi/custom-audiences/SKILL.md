@@ -184,8 +184,6 @@ This is the highest-leverage technique in the custom audiences playbook: running
 
 ### Results from Audience Warming
 
-Running social awareness campaigns before the first email campaign produced:
-
 Running social awareness campaigns before the first email campaign produced higher-than-benchmark open rates, click-through rates, and click-to-open rates, with zero unsubscribes on the first send. The audience warming approach delivered meaningfully better results than cold outreach across all key email metrics.
 
 **Why this works psychologically:**

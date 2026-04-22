@@ -109,7 +109,7 @@ Beyond basic demographic and behavioral scoring, the most predictive models laye
 ### Job Posting Urgency Language
 
 Monitor target companies' job postings for signals:
-- **High urgency:** "Immediate need," "ASAP," "backfill," "urgent"  — +25 points
+- **High urgency:** "Immediate need," "ASAP," "backfill," "urgent" — +25 points
 - **Standard:** Regular job posting for relevant role — +10 points
 - **Multiple openings:** Company has 3+ relevant positions open — +15 points
 
