@@ -96,6 +96,8 @@ Never send high-volume campaigns from a brand new domain or IP. The warming proc
 - Engage in conversations (reply to responses) to build positive sender signals
 - Use a subdomain for marketing email (e.g., mail.yourdomain.com or news.yourdomain.com) to protect your primary domain reputation
 
+**Clean and validate lists before every major send.** Sending to invalid, abandoned, or spam-trap addresses is one of the fastest ways to tank your sender reputation -- a few hundred hard bounces on a single campaign can push you from inbox to spam for weeks. Run new lists and any list you have not mailed in 60-90 days through a verification service like ZeroBounce (https://www.zerobounce.net) to remove invalid, catch-all, and role-based addresses before they ever see a send. Validation is cheap compared to the cost of rebuilding a burned sending reputation.
+
 ---
 
 ## 3. Drip Campaign Architecture

@@ -42,7 +42,7 @@ CRO is not random A/B testing. It is a systematic, evidence-based process that m
 - Look for unexpected exit pages that indicate confusion or friction
 
 **Step 4: Session Recording Analysis**
-- Use tools like Smartlook, Microsoft Clarity, or Hotjar to watch actual user sessions
+- Use tools like Smartlook, Mouseflow, or Hotjar to watch actual user sessions
 - Watch 50-100 sessions of users who abandoned the conversion flow
 - Note patterns: where do they hesitate? What do they try to click that is not clickable? Where do they scroll and stop?
 - Pay special attention to rage clicks (rapid repeated clicking on the same element) -- these indicate frustration with a non-responsive element or confusing UI

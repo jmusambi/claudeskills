@@ -42,6 +42,9 @@ Start broad. Include every conceivable channel:
 | Community/Social organic | Owned | Brand building, long play |
 | PR/Media | Earned | Credibility and awareness |
 | In-product messaging | Owned | Existing user base expansion |
+| TikTok Ads | Paid | Short-form video reach, works for some prosumer and SMB B2B |
+| Publications | Paid | Industry newsletters and trade publications reach engaged niche audiences |
+| Reddit Ads | Paid | Subreddit-level targeting for technical and specialist audiences |
 
 ### Step 2: Validate Audience Size
 

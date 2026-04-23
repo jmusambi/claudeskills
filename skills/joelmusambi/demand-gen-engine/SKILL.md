@@ -118,6 +118,32 @@ Most B2B companies run two systems: a marketing platform (HubSpot, Pardot, Activ
 
 Once this is in place, AEs can finally see the source of their leads and their engagement history. This transforms the sales team's ability to personalize outreach and close deals.
 
+## Integrating Platforms with AI for Cross-Channel Insights
+
+A clean CRM is the foundation, but the real leverage comes from connecting every marketing and sales platform into a single queryable layer and letting AI tools like Claude Code cross-reference the data. Most companies have the signals they need — they are just scattered across eight systems that never talk to each other.
+
+### What to connect
+
+- **CRM** (Salesforce, HubSpot, Pipedrive) — account and contact records, pipeline stage, deal history
+- **Ad platforms** (Google Ads, LinkedIn, Meta) — spend, clicks, form fills, audience matches
+- **Web analytics** (GA4, Segment, server-side tracking) — page views, session behavior, de-anonymized visitor data
+- **Email and marketing automation** (HubSpot, Marketo, Pardot, Customer.io) — opens, clicks, nurture stage, lead score
+- **Sales engagement** (Outreach, Salesloft, Apollo) — sequence activity, reply sentiment, meeting bookings
+- **Intent and enrichment** (6sense, Bombora, Clearbit, ZoomInfo) — third-party buying signals and firmographics
+
+Most of these expose APIs and most have MCP connectors or community integrations. You do not need a full warehouse to start — a read-only connection from each source into a tool Claude can query is enough to unlock the first wave of insights.
+
+### What this actually surfaces
+
+This is where AI earns its spot. A few concrete examples of questions that are hard to answer manually but trivial once the data is connected:
+
+- "Query across Salesforce pipeline data, Google Ads conversion data, and web visitor tracking to find accounts showing buying signals across multiple channels — people who visited pricing, a known contact clicked a LinkedIn ad, and a deal exists but has stalled."
+- "Show me target accounts that have had three or more unique visitors on the site in the last 14 days but no open opportunity, ranked by fit score."
+- "Cross-reference Outreach reply data with CRM industry field — which verticals are replying at above-average rates this quarter, and is ad spend aligned with those verticals?"
+- "List accounts where a champion left (job change detected in enrichment data) and flag them for a re-engagement sequence before the deal goes dark."
+
+The pattern: join two or three data sources humans rarely look at together, and patterns that were invisible show up as targeted lead lists, pipeline risks, or unclaimed demand. This is how you stop running each channel as a silo and start treating the full funnel as one system.
+
 ## Phase 5: Acquisition Channel Selection
 
 ### The Framework

@@ -350,19 +350,19 @@ These benchmarks represent achievable performance for a well-built outbound syst
 
 | Metric | Target Range | Red Flag Below |
 |---|---|---|
-| Email open rate | 50-70% | 35% |
-| Reply rate (cold first-touch) | 10-15% | 5% |
+| Email open rate | 25-60% | 10% |
+| Reply rate (cold first-touch) | 5-15% | 2% |
 | Positive reply rate | 4-8% | 2% |
-| Meeting book rate (from positive replies) | 40-60% | 25% |
+| Meeting book rate (from positive replies) | 30-60% | 25% |
 | Qualified meetings per day (at scale) | 2-4 | Less than 1 |
 | Email bounce rate | Under 1% | Above 2% |
 | Unsubscribe/spam rate | Under 0.3% | Above 0.5% |
 
 ### Diagnosing Underperformance
 
-**Low open rates (under 35%):** Subject line problem, deliverability problem, or audience targeting problem. Test subject lines first — if new subject lines do not improve opens, check your sender reputation and domain health.
+**Low open rates (under 10%):** Subject line problem, deliverability problem, or audience targeting problem. Test subject lines first — if new subject lines do not improve opens, check your sender reputation and domain health.
 
-**Low reply rates (under 5%):** Content relevance problem. The email is being opened but not resonating. Review your personalization — is it substantive or superficial? Check whether your value proposition matches the actual pain points of the people you are reaching.
+**Low reply rates (under 2%):** Content relevance problem. The email is being opened but not resonating. Review your personalization — is it substantive or superficial? Check whether your value proposition matches the actual pain points of the people you are reaching.
 
 **High replies but low meeting conversion:** Qualification problem. You are getting responses but they are not converting to calls. Either the qualification criteria are too loose (you are emailing people who are curious but not buying), or the transition from conversation to meeting is too aggressive.
 

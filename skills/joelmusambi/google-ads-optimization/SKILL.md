@@ -460,3 +460,21 @@ Keyword research data enables realistic budget planning rather than arbitrary sp
 **Account for people costs:** Even if the founder or a team member manages the campaigns themselves, that time has value. Failing to account for the hours spent on campaign management biases your ROI calculations. A channel that looks "free" because nobody is paying an agency may actually have a higher effective cost than a channel where you pay for managed service but spend zero internal hours.
 
 **Track time by channel:** Log hours spent managing each marketing channel monthly. When you combine ad spend plus time cost, the true channel ROI often looks very different from the ad-spend-only calculation. This data prevents the common mistake of over-investing in "cheap" channels that consume enormous amounts of time.
+
+## Connecting Google Ads to Claude Code via MCP
+
+The Model Context Protocol (MCP) lets you connect your Google Ads account directly to Claude Code, turning ad optimization into a conversation instead of a CSV export workflow. Once configured, Claude can read account data, run queries against your campaigns, and surface recommendations in the same session where you discuss strategy.
+
+**How to connect:**
+- Install an MCP server that supports the Google Ads API (community servers exist; some require a developer token and OAuth credentials from your Google Ads manager account)
+- Register the server in your Claude Code configuration so it is available as a data source in your sessions
+- Scope access to the specific accounts you want Claude to see — avoid granting broader permissions than necessary
+
+**What this unlocks in practice:**
+- **Search terms analysis:** Ask Claude to pull the last 30 days of search terms across a campaign, cluster them by intent, and flag high-spend terms with zero conversions as negative keyword candidates
+- **Keyword performance review:** Have Claude rank keywords by cost per conversion, highlight ones drifting above your target CPA, and suggest bid adjustments or match-type changes
+- **Wasted spend audit:** Request a weekly scan for auto-applied recommendations, low-quality-score keywords, and placements on irrelevant sites — then discuss which ones to disable
+- **Campaign-level diagnostics:** Ask "why did conversions drop this week?" and let Claude correlate impression share, auction insights, quality score shifts, and search volume changes
+- **Optimization backlog:** Turn the findings into a prioritized action list you can execute directly, with Claude drafting the negative keyword lists, ad copy variations, or bid adjustments inline
+
+The point is not to automate decisions — it is to compress the loop between asking a question about your account and having the data in front of you. What used to take a 20-minute CSV pull and a pivot table becomes a follow-up question.

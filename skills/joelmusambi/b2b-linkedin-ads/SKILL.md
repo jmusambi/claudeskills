@@ -290,7 +290,6 @@ LinkedIn is the best paid channel for promoting B2B webinars. Here is the specif
 
 ### Optimization Tips
 
-- Pause ads 24 hours before the webinar. Last-minute registrants from ads rarely attend.
 - Use Matched Audiences to promote webinars to your existing lead list. These people convert at 2-3x the rate of cold audiences.
 - Test both Lead Gen Forms and website landing pages. Lead Gen Forms have higher conversion rates but lower lead quality. Landing pages have lower conversion rates but allow for more data capture and better tracking.
 

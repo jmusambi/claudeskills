@@ -79,14 +79,10 @@ Each ABM sequence should include multiple channels:
 | 1 | Email | Personalized intro referencing specific signal | Pain point |
 | 2 | LinkedIn | Connection request with custom note | Relationship |
 | 3 | Retargeting | Start showing ads to this account | Awareness |
-| 5 | Email | Share relevant case study | Social proof |
-| 7 | Phone | Warm call referencing email | Direct outreach |
-| 8 | LinkedIn | Engage with their content | Relationship |
-| 10 | Email | Share industry insight | Thought leadership |
-| 12 | Direct mail | Handwritten note or relevant item | Personal touch |
-| 14 | Email | Offer a consultation or demo | CTA |
+| 7 | Email | Share relevant case study | Social proof |
+| 10 | Phone | Warm call referencing email | Direct outreach |
+| 14 | LinkedIn | Share content that addresses their pain | Value |
 | 17 | Phone | Follow up on previous touchpoints | Persistence |
-| 19 | LinkedIn | Share content that addresses their pain | Value |
 | 21 | Email | Final check-in with soft CTA | Last attempt |
 
 ### Tailoring Sequences by Theme

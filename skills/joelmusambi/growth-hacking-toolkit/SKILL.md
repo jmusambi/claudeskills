@@ -293,7 +293,7 @@ Drive traffic back to your site by sharing third-party content with Sniply overl
 
 ### CTA Optimization
 
-- Use a compelling, specific CTA. "Learn more" converts 60% worse than specific CTAs like "Get the free template" or "See how we solve this."
+- Use a compelling, specific CTA. "Learn more" has a lower conversion rate than specific CTAs like "Get the free template" or "See how we solve this."
 - Match the CTA to the content topic. If you shared an article about email deliverability, your CTA should relate to email deliverability.
 - Test different CTA formats: button vs. text link, question vs. statement, benefit-focused vs. curiosity-focused.
 
