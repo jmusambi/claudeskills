@@ -257,3 +257,79 @@ When experiments produce results, share them with the broader team:
 - Leadership sees concrete ROI from optimization work
 
 The compounding effect of continuous experimentation is one of the most reliable ways to grow revenue without increasing spend.
+
+## Experiment Tracking and Prioritization Framework
+
+Every experiment needs two things before it runs: a score that tells you whether it's worth running, and a tracker that captures everything from hypothesis to outcome. Without both, you end up running low-impact tests, losing track of what you learned, and repeating mistakes.
+
+### The Prioritization Scorecard
+
+Before running any experiment, score it across three dimensions — Probability, Impact, and Ease. Each dimension has two sub-scores rated 1–5. Multiply all six scores together to get a composite priority score.
+
+**Probability** — How likely is this to work?
+- Is this a real bottleneck? (5 = clear bottleneck backed by data, 1 = gut feeling)
+- Are you confident this change will move the needle? (5 = strong evidence from heatmaps/session recordings/analytics, 1 = speculative)
+
+**Impact** — How big is the potential upside?
+- How many people does this affect? (5 = high-traffic page or flow, 1 = niche page with minimal visits)
+- How different is this from the current experience? (5 = significant change in layout, messaging, or flow, 1 = minor copy tweak)
+
+**Ease** — How hard is this to execute?
+- How much time does it take to build and launch? (5 = under a day, 1 = multi-week dev project)
+- How much does it cost? (5 = free or negligible, 1 = requires significant budget or tools)
+
+**Scoring formula:** Probability1 × Probability2 × Impact1 × Impact2 × Ease1 × Ease2
+
+A test scoring 3,600 (high impact, reasonable probability, easy to execute) gets prioritized over a test scoring 600 (low impact even though it's easy). This prevents the common trap of running easy-but-meaningless tests while high-impact opportunities sit in a backlog.
+
+Build this as a simple spreadsheet. One tab for scoring, one tab for tracking. Score every experiment idea before it enters the pipeline. Run the highest-scoring tests first.
+
+### The Experiment Tracker
+
+Every experiment gets a single row in a tracking spreadsheet with three sections:
+
+**Section 1 — Experiment Overview**
+- Experiment name (descriptive, not "Test 1")
+- Status (Idea → Queued → Live → Complete)
+- Owner (who is running this test)
+- Time period (how long will it run — minimum two full business weeks)
+- Explanation (one paragraph: what exactly are you changing and why)
+- Resources (who needs to be involved — design, dev, content)
+
+**Section 2 — Research**
+- Assumption: State it as "I believe that [change] will [outcome] because [reason]." This forces clarity. If you cannot complete this sentence, the experiment is not ready to run.
+- Target audience: Who sees this test? All visitors, mobile only, returning visitors, paid traffic only?
+- Metrics to track: Primary metric (conversion rate, bounce rate, form submissions) and one or two secondary metrics.
+- Definitely successful when: Define the win condition before the test starts. "Form submissions increase by 15% with 95% confidence" is a success condition. "We see improvement" is not.
+- Definitely failed when: Define the failure condition. "No statistically significant difference after 30 days" or "Bounce rate increases by more than 10%."
+
+**Section 3 — Results**
+- Results: What actually happened? Include the numbers.
+- Validated? Yes or No — did the test confirm or reject the assumption?
+- Learnings: What did you learn beyond the primary metric? Did anything unexpected happen in secondary metrics or specific segments?
+- Next steps: If validated, implement permanently and move to the next hypothesis. If invalidated, what's the next test based on what you learned?
+- Comments: Anything unusual — seasonal effects, a marketing campaign running simultaneously, technical issues during the test, traffic from non-target audiences skewing results.
+
+### Example — Homepage Lead Capture Test
+
+Here is what a real experiment looks like in the tracker:
+
+**Scoring:** The team scores a homepage redesign test. Probability: 2 and 3 (moderate confidence — heatmaps show visitors interact with the header area but current elements are not driving clicks). Impact: 4 and 3 (homepage gets significant traffic and the change is visually substantial). Ease: 5 and 5 (no dev work needed, can be done with the CMS and existing assets). Composite score: 3,600. This ranks as the top priority.
+
+**Tracker entry:**
+- Name: Homepage Whitepaper Gate
+- Status: Live
+- Owner: Marketing team
+- Time period: One month
+- Explanation: Replace the two content blocks under the homepage header with new images and CTAs pointing to gated resources (whitepaper downloads) instead of ungated pages.
+- Resources: Designer for new images, marketer for CTA copy and form setup.
+- Assumption: "I believe that we can increase organic lead capture from homepage visitors by replacing informational content blocks with gated resource CTAs, because heatmap data shows visitors engage with this area but current elements do not collect any contact information."
+- Target audience: Homepage visitors from organic search.
+- Metrics to track: Homepage form submissions (primary), bounce rate (secondary).
+- Success condition: Form submissions increase with statistical significance.
+- Failure condition: No change in form submissions after 30 days, or bounce rate increases by more than 10%.
+- Comments: "Potential risk — form submissions from non-target-market visitors may inflate results. Filter by geography and company type when analyzing."
+
+After the test completes, the results section captures what happened, what was learned, and what to test next. This creates a permanent record that prevents your team from re-running failed tests or forgetting what worked.
+
+**You can build this in a spreadsheet or use a dedicated experimentation platform.** A spreadsheet works perfectly for teams running 2–5 tests per month. If you scale beyond that, platforms like Mouseflow, VWO, or Optimizely offer built-in experiment tracking alongside their testing tools. The framework is the same regardless of where you track it — the discipline of scoring, documenting, and reviewing is what separates teams that compound improvements from teams that run random tests.
