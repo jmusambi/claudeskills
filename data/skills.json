@@ -79,15 +79,15 @@
   },
   {
     "id": 7,
-    "name": "Growth Scraping",
-    "slug": "growth-scraping",
-    "description": "Search operators, browser inspect tricks, and automated extraction for lead lists.",
+    "name": "Web Scraping",
+    "slug": "web-scraping",
+    "description": "Search operators, browser inspect tricks, and Claude Code-driven API scraping for lead lists.",
     "author": "Joel Musambi",
     "authorHandle": "joelmusambi",
     "category": "Scraping",
     "access": "paid",
     "installCount": 412,
-    "repoPath": "joelmusambi/growth-scraping",
+    "repoPath": "joelmusambi/web-scraping",
     "createdAt": "2025-03-10"
   },
   {

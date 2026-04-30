@@ -14,7 +14,7 @@ const SKILLS = {
   "abm-program": "ABM",
   "acquisition-channels": "Growth",
   "web-experiments": "CRO",
-  "growth-scraping": "Scraping",
+  "web-scraping": "Scraping",
   "custom-audiences": "Paid Media",
   "google-ads-optimization": "Paid Media",
   "facebook-ads-mastery": "Paid Media",

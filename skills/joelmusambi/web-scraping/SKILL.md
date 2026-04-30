@@ -1,11 +1,11 @@
 ---
-name: Growth Scraping
-description: "Use this skill when building targeted lead lists through web scraping, using search operators to find hidden data, extracting contact information from websites, automating data collection, or growth hacking through creative data sourcing. Covers Google operators, browser inspect tools, shortlink enumeration, and the scraping-to-campaign workflow."
+name: Web Scraping
+description: "Use this skill when building targeted lead lists through web scraping, using search operators to find hidden data, extracting contact information from websites, or automating data collection. Covers Google operators, browser inspect tools, shortlink enumeration, the scraping-to-campaign workflow, and using Claude Code as a scraping tool alongside traditional methods to hit APIs, clean data, and assemble final lead lists."
 category: Scraping
 access: free
 ---
 
-# Growth Scraping — Web Scraping and Search Operators for Lead Generation
+# Web Scraping
 
 This playbook covers how to use web scraping and search operators to build targeted lead lists that kickstart marketing campaigns. This isn't about buying lists — it's about the growth hacking mindset of digging relentlessly to find information that others can't.
 
@@ -295,3 +295,34 @@ Then deploy targeted drip campaigns for each segment. This keeps engagement high
 | Tracking results | CRM lead source tracking |
 
 The power of scraping isn't just the data — it's the campaigns you build around it. One well-executed scraping-to-campaign workflow can kickstart an entire marketing program.
+
+## Using Claude Code for Scraping and Lead List Building
+
+Claude Code is the fastest path from "I need a lead list" to "I have a clean spreadsheet ready for outreach." Instead of writing scrapers yourself or paying for SaaS tools, you describe what you want and Claude Code writes the script, calls the APIs, processes the results, and hands back a finished file.
+
+### API-Based Scraping Workflow
+
+Most government procurement databases, public data portals, and modern SaaS platforms expose APIs. Claude Code can hit them directly. The flow:
+
+1. Give Claude Code your API key and the endpoint documentation (or just the platform name — it can usually find the docs).
+2. Define your keywords, NAICS codes, geographic filters, date ranges, or whatever the platform supports.
+3. Tell it to search across each target state, region, or segment and aggregate the results.
+4. Have it output an Excel file with separate sheets per territory, industry, or buyer persona.
+
+Claude Code writes the Python script, paginates through results, handles rate limits, deduplicates, and structures the output. A search across 50 states that would take a full day of manual exporting and merging finishes in minutes.
+
+### Email Validation Without the CSV Shuffle
+
+Email validation services like ZeroBounce, NeverBounce, and Hunter all have APIs. Claude Code can plug into them directly. Hand it a CSV, give it your validation API key, and it reads each email, validates through the API, and writes a clean output file with only valid addresses. No manual upload, no waiting on a dashboard, no downloading the cleaned file. The whole step happens in one command.
+
+### Platforms Without an API
+
+For platforms behind a login or without API access (LinkedIn Sales Navigator, certain industry directories, gated databases), do the searching and exporting inside the platform manually. Then hand the raw CSV to Claude Code. It will parse the columns, normalize the data, filter by your criteria, deduplicate against previous lists, and organize the result into the final deliverable format.
+
+### CRM Cross-Referencing Before Outreach
+
+Before launching outreach against any scraped list, cross-reference it against your CRM. Export your existing customers, open opportunities, and recently contacted accounts as CSVs. Hand them to Claude Code along with the scraped list. It will exclude any overlapping companies and contacts, so you do not accidentally cold-email a customer or step on an active deal.
+
+### Why This Matters
+
+What used to take hours of manual searching, copying, cleaning, and validating compresses into minutes. Claude Code writes the script, runs it, processes the data, and returns a ready-to-use lead list. The scraping mindset stays the same — you still need to know where the data lives and how to find it. The execution layer just got cheaper and faster.

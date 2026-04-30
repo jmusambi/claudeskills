@@ -540,3 +540,29 @@ The Links report in GSC is underused but incredibly valuable for internal link s
 - Ensure each one links to your highest-priority commercial pages
 - Use descriptive, keyword-rich anchor text for these internal links
 - Rotate in new internal links as your content priorities shift quarterly
+
+---
+
+## 14. Optimizing Content for AI Search (GEO/AEO)
+
+AI-powered search is changing how content gets discovered. LLMs like ChatGPT, Perplexity, Gemini, and Claude pull their answers from search engines. They break complex queries into sub-queries and decide which content to cite. If your content is not structured for that process, you will not be the source AI pulls from. This is becoming as important as traditional SEO.
+
+### Structure Content for AI Citation
+
+The most important structural change: put a concise answer (40-60 words) right after each question-based header. Lead with the answer, not the backstory. AI models pull from pages that are fact-dense and get to the point fast. Narrative padding and long introductions get skipped. The inverted pyramid format (answer first, context after) is what AI prefers to cite.
+
+### See What ChatGPT Actually Searches
+
+You can see exactly what ChatGPT searches when it answers a prompt. Open your browser developer tools, go to the Network tab, and inspect the requests. The actual search terms the model runs are visible in the response data. This tells you what queries to optimize for. The terms ChatGPT searches are often different from what you would expect, and knowing them gives you a direct optimization target.
+
+### Track AI Referral Traffic
+
+Set up filters in Google Analytics to identify visits coming from AI tools. Create a regex filter for session source/medium that captures chatgpt, openai, perplexity, claude, gemini, copilot, and other AI platforms. This tells you which pages AI is surfacing and which ones it is ignoring. The pages getting AI traffic are your best reference for what is working. The pages getting none need structural improvements.
+
+### Video Content in AI Search
+
+Video platforms are showing up in AI-generated answers more than most people realize. Video is one of the most frequently cited source types in AI search results. Optimize your video titles, descriptions, and transcripts so AI can read and cite your video content. If you are creating written content on a topic, consider creating a video version as well. Use the same target queries in your video title, description, and spoken content so the transcript matches what AI is searching for.
+
+### New Metrics for AI Visibility
+
+Traditional traffic metrics do not capture the full picture anymore. Track how often your brand gets mentioned in AI summaries. Track how far down the page your organic link appears after AI answers push results down. Track whether zero-click impressions correlate with later branded search volume. A page can generate zero clicks from AI but still drive branded searches days later when the user remembers seeing your name in the AI answer.

@@ -22,7 +22,7 @@ npx growthskills add demand-gen-engine
 | 4 | abm-program | ABM |
 | 5 | acquisition-channels | Growth |
 | 6 | web-experiments | CRO |
-| 7 | growth-scraping | Scraping |
+| 7 | web-scraping | Scraping |
 | 8 | custom-audiences | Paid Media |
 | 9 | google-ads-optimization | Paid Media |
 | 10 | facebook-ads-mastery | Paid Media |
