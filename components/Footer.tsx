@@ -39,14 +39,6 @@ export default function Footer() {
                   LinkedIn
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://github.com/joelmusambi/growthskills/blob/main/LICENSE"
-                  className="hover:text-foreground transition-colors"
-                >
-                  MIT License
-                </a>
-              </li>
             </ul>
           </div>
         </div>
