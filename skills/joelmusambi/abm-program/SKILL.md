@@ -274,6 +274,34 @@ Once you've validated the model:
 
 ABM programs that are given time to mature and iterate on signals typically become one of the top 3 revenue contributors within 12-18 months.
 
+## Pre-Meeting Intelligence Reports
+
+One of the highest-impact ABM activities is giving your sales team detailed intelligence before every meeting, demo, or conference conversation. This is not a generic company profile. It is a cross-referenced report that combines 6-8 data sources into a single brief per target account.
+
+**Data sources to combine**
+
+- CRM history (past interactions, previous opportunities, deal stage, notes)
+- Procurement records (if selling to government or public sector — what vendors they currently use, what they spend, contract dates)
+- Competitor vendor data (which competitor products the account uses, detected through technology analysis, public records, or review sites)
+- Web visitor tracking (which pages they visited on your site, how often, how recently)
+- Email engagement (which emails they opened, clicked, replied to)
+- Conference registration profiles (if they are attending the same event, what sessions they registered for)
+- Sales engagement history (SDR outreach history, call notes, sequence enrollment)
+
+**How to weight the sources**
+
+Not all data is equally reliable. Government procurement records and CRM data carry the most weight because they reflect actual spending decisions and documented interactions. Web visitor data and email engagement are useful signals but can be noisy. The intelligence report should reflect this hierarchy so the sales rep knows which signals are strongest and where to anchor the conversation.
+
+**How to build it**
+
+Upload the relevant exports into Claude and ask it to cross-reference and generate a brief per account. The prompt should specify: for each target account, pull their CRM history, check if they appear in procurement records, check if they are using a competitor, check if they visited our site, and check their email engagement. Output a structured brief that gives the sales rep everything they need to walk into the conversation informed.
+
+**Why this scales**
+
+This started as a one-off conference prep document for a single event. After seeing how much more prepared the sales team was compared to meetings without intelligence reports, it became a repeatable framework used before every sales conversation. The pattern works for conference meetings, scheduled demos, cold outreach, and renewal conversations. The sales team walks in knowing who they are meeting, which vendors the account currently uses, what they are spending, and where the opportunity fits.
+
+The framework is reusable. Once you build the first report, every subsequent report follows the same structure. You update the data exports, run the same cross-referencing process, and generate a new brief. Claude can produce 10-20 account briefs in a single session from uploaded exports. The first report takes effort to design. Every report after that is a copy of the same prompt with new data.
+
 ## Common ABM Mistakes
 
 1. **Not giving SDRs enough context** — Sales outreach without intelligence is just cold calling

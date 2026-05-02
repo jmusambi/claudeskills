@@ -326,3 +326,81 @@ Before launching outreach against any scraped list, cross-reference it against y
 ### Why This Matters
 
 What used to take hours of manual searching, copying, cleaning, and validating compresses into minutes. Claude Code writes the script, runs it, processes the data, and returns a ready-to-use lead list. The scraping mindset stays the same — you still need to know where the data lives and how to find it. The execution layer just got cheaper and faster.
+
+## Real-World API Scraping Workflow
+
+This is the end-to-end pattern for using Claude Code to pull, filter, and cross-reference public records at scale. The pattern works for any sector where procurement records, meeting minutes, budget documents, or other government data is publicly accessible.
+
+**Step 1: Connect to the source API**
+
+Start with a saved search or API endpoint that returns public records. In one real project, this meant connecting to a government spending and meeting intelligence database, passing in an API key, and searching public meeting records across 10 states for mentions of specific service shortages relevant to the product being sold. Hand Claude Code the API key, the endpoint, and the filter criteria. It writes the request, paginates, and aggregates the results.
+
+**Step 2: Filter raw results to actionable signals**
+
+The raw pull returned over 1,500 records. Most of that volume was noise — routine mentions of the service category that did not indicate any actual demand. Claude Code wrote a Python script to filter the records down to only the entries containing genuine shortage or hiring difficulty language. This filtering step is the single most important part of the pipeline. Without it, the sales team drowns in irrelevant records. After filtering, the dataset dropped to 65 actionable leads with documented need.
+
+**Step 3: Cross-reference against three internal lists**
+
+Never run outreach against a raw scraped list. Cross-reference first to avoid wasting outreach on existing relationships. Load three files into Claude Code:
+
+- The CRM customer list (active accounts you do not want to cold-email)
+- The active opportunities export (open deals that should not get a parallel cold pitch)
+- The do-not-contact list (accounts excluded for legal, contractual, or relationship reasons)
+
+Claude Code normalizes company names across all four files, runs fuzzy matching, and color-codes the output. In this project, 26 matches were flagged as existing opportunities (red), 2 matched the exclusion list (yellow), and 37 were completely net-new leads with documented needs (green). The green rows are the only ones that go to outreach.
+
+**Step 4: Run a parallel competitor frustration search**
+
+The same data source can be scraped for competitor frustration signals. Run a separate query for mentions of competitor vendor names in the same public records. Claude Code then filters for language that indicates genuine dissatisfaction: billing disputes, service discontinuations, contract non-renewals, cost complaints, or votes to switch providers. In one run, this surfaced 5 accounts across 2 competitors where the public record showed active dissatisfaction. These are the highest-value outreach targets because the account already has budget allocated and is actively looking for an alternative — you are not creating demand, you are catching demand mid-flight.
+
+**Step 5: Output a clean, ranked deliverable**
+
+The final output is a single Excel workbook with the cross-referenced and color-coded lead list, a separate tab for competitor frustration accounts, and source citations on every row. The entire process from API call to cleaned, cross-referenced, color-coded file took under 30 minutes with Claude Code. Doing this manually would take a full day or more.
+
+This is a repeatable pattern for any B2B company that sells to government agencies, public institutions, or any sector where procurement records, meeting minutes, or budget documents are publicly available. Build the workflow once, then run it weekly with a single prompt.
+
+## Automated Website Visitor to Outreach Pipeline
+
+This is a Python pipeline built with Claude Code that automates the path from anonymous website visitor to personalized sales outreach. It is designed for any B2B company that uses a website visitor identification tool (Snitcher, Leadfeeder, Clearbit Reveal, or similar) and wants to turn that data into qualified outreach without hours of manual work each week.
+
+**Stage 1: Exclusion list building**
+
+Load your CRM closed-won customers and active opportunities into the script. Normalize company names by stripping common words like "Inc," "LLC," "Corporation," and common industry terms. Use fuzzy matching with a tuned threshold. In the real build, the threshold started at 0.75 and produced false positives — two similarly named companies in different regions matched because both normalized names were short and generic. The threshold was raised incrementally to 0.88 before accuracy stabilized. Also cross-reference by email domain to catch matches the name matching misses.
+
+**Stage 2: Visitor data ingestion**
+
+Load the website visitor export. Filter by recency (default 30 days). Filter to your target industry. Remove your own company's visits. Sort by session count so the highest-engagement accounts get processed first.
+
+**Stage 3: Company classification**
+
+This is the hardest engineering problem in the pipeline. Visitor identification tools tag companies broadly. A single industry tag can catch everything from actual target accounts to software vendors, consultants, publishers, and international organizations that have nothing to do with your market. The classifier needs layers:
+
+- Country filter (skip non-target geographies)
+- Domain filter (boost certain domain patterns, skip others)
+- Negative keyword matching (30+ keywords covering vendors, consultants, software companies, publishers, and unrelated industries)
+- Positive pattern matching (regex patterns for your target company naming conventions)
+- An ambiguous bucket for entities that need human review
+
+In the real build, this classifier correctly identified the majority of target companies, auto-skipped the non-targets, and flagged a handful of ambiguous entities for manual review.
+
+**Stage 4: Contact enrichment with a two-tier approach**
+
+Tier 1: Use the Claude API with web search to find decision-maker contact info for each qualifying company. The prompt instructs Claude to search the company's staff directory, leadership page, and public records for anyone with a relevant leadership title. Claude returns structured JSON with name, title, email, phone, source URL, and confidence rating.
+
+Key technical learning: Claude's web search responses often wrap JSON in markdown fences or include nested objects that break simple parsing. The real build required three fallback parsing methods (direct JSON parse, nested brace depth tracking, and regex field extraction) because the majority of initial enrichment results silently failed due to the parsing issue. Build all three fallbacks from the start.
+
+Tier 2: If web search fails or returns low confidence, fall back to your existing sales engagement lead database. Match by company name, email domain, or fuzzy name matching. When multiple contacts match, prioritize by title relevance using a weighted scoring system.
+
+**Stage 5: Email gate**
+
+Strict rule: no valid email means the contact goes to manual lookup, regardless of how much other info was found. Clean all field values before output so there are no NaN or "None" strings in the final file.
+
+**Stage 6: Output**
+
+Two files: an Excel workbook with four tabs (Ready for Outreach, Manual Lookup, Excluded, Non-Target Skipped) and a sales-engagement-platform-ready CSV with clean formatting and no empty values.
+
+**Weekly operational workflow**
+
+Download the visitor export, open Claude Code, paste one prompt, approve the command, import the resulting CSV into your sales engagement platform. Total time: about 8 minutes including the 3-5 minute enrichment run. Cost: roughly $0.05-0.10 per company lookup via the Claude API. A typical weekly run of 20-30 new companies costs $1-3.
+
+This is a repeatable pattern for any B2B company tracking website visitors that wants to automate the path from anonymous visit to personalized outreach. Build it once, then it runs every week with a single command.

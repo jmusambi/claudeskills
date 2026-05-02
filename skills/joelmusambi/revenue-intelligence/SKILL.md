@@ -608,3 +608,17 @@ Companies using a revenue intelligence engine operate fundamentally differently 
 The investment in building this engine is significant (3-4 months of focused effort). The return is transformative. Teams using predictive intelligence systems close 20-40% more deals per rep, allocate budget 30-50% more efficiently, and forecast revenue with 2-3x more accuracy.
 
 This is the future of revenue operations. The companies that build it now will have an insurmountable data advantage over those that start later.
+
+## Building the Engine in Practice — Three Tiers
+
+The architecture described earlier in this playbook is the destination. Here is how to get there in practice, starting with zero engineering resources.
+
+**Tier 1 — What you can do today.** Upload CSV exports (CRM leads, web visitor data, email engagement, pipeline reports) directly into Claude or ChatGPT and query across them in natural language. Ask questions like "show me accounts that visited our site in the last 30 days, are not current customers, and have an open opportunity" and get answers in seconds. This is a conversational data warehouse. You are cross-referencing multiple data sources without writing SQL or building dashboards. The limitation is that every new chat starts from scratch, and you have to re-upload files each session. But the value is immediate. Most marketers can start doing this today.
+
+**Tier 2 — Lightweight persistent app.** Build a simple application with persistent storage and a Claude-powered query front end. This means your datasets stay indexed between sessions. You upload a new CRM export and it appends to the existing baseline rather than replacing it. You can track dataset versions, log queries, and build a history of insights. This requires some technical setup (a database, a basic web interface, API integration) but no data engineering team. Claude Code can build this for you in a few sessions.
+
+**Tier 3 — Full predictive engine.** A proper data stack with automated ingestion from APIs (CRM, web analytics, email platforms, procurement databases), real-time scoring, close probability modeling, and next-best-action recommendations pushed to sales reps. This is where the urgency scoring and scarcity index calculations described earlier in this playbook run automatically rather than manually. This requires a data engineering investment, but the foundation built in Tier 1 and Tier 2 validates the logic before you spend on infrastructure.
+
+**The key insight.** Tier 1 is not a compromise. It is where you validate whether cross-referencing your data sources actually produces actionable intelligence. If querying across your CRM, web visitors, and email engagement in Claude does not surface insights you did not already have, Tier 3 will not either. Start with Tier 1. Prove the value. Then build up.
+
+In practice, Tier 1 has been used to cross-reference 12+ data sources (CRM, web visitors, email engagement, procurement records, competitor analysis, conference profiles, pipeline reports, and more) to produce per-account intelligence reports that give sales teams actionable context before every conversation. The full predictive engine is a multi-month investment. The conversational version of it is something you can run on your laptop this afternoon — and it answers the same questions.
