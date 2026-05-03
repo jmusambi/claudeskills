@@ -581,3 +581,19 @@ If your final conversion happens offline — a phone call, a text message, an in
 - Your automated bidding strategies in ad platforms become dramatically more effective because they can optimize for actual revenue events, not just proxy conversions
 
 **Implementation priority:** Start with your highest-volume offline conversion path. If most of your revenue comes from phone calls, implement call tracking with dynamic number insertion first. If most revenue comes from in-person consultations that start as web form fills, build the CRM-to-analytics bridge first. Solve the biggest attribution gap before expanding to secondary channels.
+
+---
+
+## NPS-Based Automation Branching
+
+Most companies collect NPS scores and look at them in a dashboard. Very few wire NPS directly into their automation to trigger different actions based on the score. This is a missed opportunity.
+
+**The pattern:** after a key customer milestone (first major interaction, onboarding completion, first renewal period, or a significant event), trigger an NPS survey. Set a delay of 2-3 weeks to allow responses to accumulate. Then branch the automation based on the score.
+
+**Low NPS path:** trigger a webhook to your CRM that creates a task for a customer success rep or account manager to personally follow up. This is not a marketing email. It is a human reaching out to understand the issue. The webhook should include the NPS score, any written feedback, and the customer's account details so the rep has full context before making the call.
+
+**High NPS path combined with a high-value signal** (like account size, engagement level, or usage frequency): trigger an upsell or expansion offer. These are your happiest, most engaged customers. They are the most receptive to a premium tier, an add-on product, or an expanded commitment. The offer should feel like a reward, not a sales pitch.
+
+Both paths merge back into a shared check-in email with a buffer delay (7-14 days). This ensures every customer gets a touchpoint regardless of which branch they went through, and it gives the rep follow-up time to complete before the next automated message.
+
+This turns a passive survey into an active revenue and retention mechanism. Low NPS becomes an early warning system that routes problems to humans before they become churn. High NPS becomes a qualified upsell trigger that reaches customers at the moment they are most satisfied. The automation handles the routing. The humans handle the conversations that matter.
