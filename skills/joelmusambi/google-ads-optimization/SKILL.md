@@ -478,3 +478,167 @@ The Model Context Protocol (MCP) lets you connect your Google Ads account direct
 - **Optimization backlog:** Turn the findings into a prioritized action list you can execute directly, with Claude drafting the negative keyword lists, ad copy variations, or bid adjustments inline
 
 The point is not to automate decisions — it is to compress the loop between asking a question about your account and having the data in front of you. What used to take a 20-minute CSV pull and a pivot table becomes a follow-up question.
+
+## The Wrong Primary Conversion Problem
+
+The single highest-leverage fix in most Google Ads accounts has nothing to do with bids, keywords, or creative. It is making sure Google is optimizing on the right conversion event in the first place.
+
+Most accounts have this problem and do not know it. Google reports a healthy CPA. The dashboard looks fine. Meanwhile the actual cost per real customer in your CRM is 3-6x higher. This happens when Google is counting page visits, form impressions, or shallow form completions as conversions, while your business cares about something deeper (account creation, qualified lead, paying customer).
+
+The diagnostic is simple. Pull your Google Ads reported conversions for a period. Pull your CRM source of truth for the same period (actual signups, qualified leads, or whatever your business considers a real conversion). Reconcile the two numbers. If Google reports 220 conversions and your CRM shows 62 real signups, you have a 3.5x inflation problem and every bidding decision the algorithm is making is being trained on the wrong signal.
+
+The fix sequence:
+
+1. Identify the real conversion event (the one that maps to actual business value)
+2. Implement tracking for that event in GA4 or your conversion platform
+3. Mark it as a Key Event in GA4 and wait 24 hours
+4. Import it into Google Ads as a new conversion action
+5. Set the new event as Primary and demote the old (inflated) event to Secondary in observation mode
+6. Recalibrate Target CPAs across all campaigns using the new baseline (the new CPA will be 3-6x higher than what Google was reporting)
+7. Allow a 2-week learning period before making any other changes
+
+Every downstream decision compounds whatever is wrong with the primary conversion. Get the conversion event right first. Everything else is downstream of that.
+
+## The Paid vs Organic Reconciliation Diagnostic
+
+Before making budget decisions based on attribution reports, check whether your "organic" leads actually had a paid click as their last referrer. CRMs default to first-touch attribution, which often credits the discovery channel (organic) while ignoring the channel that triggered the actual conversion (paid).
+
+The diagnostic: pull contacts your CRM has classified as organic and check the Last Referrer URL or Ad Activity logs for a Google Click ID (gclid). The percentage will vary by industry, brand strength, and buyer behavior, but the exercise often reveals that organic and paid are working together rather than independently.
+
+Run this before assuming that cutting paid will leave organic untouched. If a meaningful share of organic-attributed leads have a paid touchpoint as their last referrer, then paid and organic are co-dependent in your funnel. Cutting paid will reduce "organic" conversions too, because the discovery layer (organic) needs the conversion layer (paid) to close.
+
+Build parallel reporting under both attribution models: first-touch for content and discovery strategy decisions, last-touch (or data-driven) for budget allocation decisions. The gap between the two reveals which channels are doing awareness work versus conversion work, and prevents the recurring "let's cut paid, organic is doing well" misread.
+
+## Cross-Campaign Keyword Routing via Negatives
+
+The same search term can perform 3-4x differently across campaigns based on geo, audience signals, ad copy, and landing page alignment. Instead of pausing a term globally because one campaign performs poorly on it, route the traffic to where it converts best by using negatives strategically.
+
+The pattern: a service-category term performs at $4 CPA in Campaign A but $15 CPA in Campaign B. The instinct is to pause the term or add it as a global negative. The smarter move is to add it as a negative only in Campaign B (the underperformer) while leaving it open in Campaign A (the winner). This forces the algorithm to route that query to the campaign where it converts efficiently.
+
+This works because Google fills the auction based on which campaigns are eligible. If multiple campaigns can serve a query, the algorithm picks based on its own logic. Adding the term as a negative in the losing campaign removes it from contention and concentrates impression share in the winning campaign.
+
+How to implement:
+
+1. Pull a search terms report covering 30+ days
+2. Identify terms appearing in multiple campaigns
+3. For each duplicate term, compare CPA, CVR, and conversion volume across campaigns
+4. Add the term as a campaign-level negative in the underperformers
+5. Leave it open in the winning campaign
+6. Monitor for 2 weeks to confirm the routing held
+
+This pattern works at scale across hundreds of terms and is one of the most underused optimization levers in Google Ads.
+
+## PMax Asset Group Policy Diagnosis
+
+Performance Max campaigns can sit with "limited by policy" status on asset groups for weeks, quietly throttling delivery while you assume the issue is bidding or budget. Policy limits are independent of bid strategy and budget. No amount of optimization on those levers will fix a policy-throttled asset group.
+
+The diagnostic: open each PMax campaign and check the Asset Groups tab. Look for "limited" or "limited by policy" status. Click into the flagged asset group to see the specific policy reason.
+
+Common policy triggers:
+
+- Personalized Ads policy (second-person "you" and "your" language in regulated verticals)
+- Healthcare and Medicines policy (any health-adjacent framing, even if your service is not strictly medical)
+- Image asset restrictions (clinical imagery, before/after photos, sensitive content)
+- Restricted financial services language
+- Prohibited claims (guaranteed outcomes, exaggerated results)
+
+Resolution sequence:
+
+1. Read the specific policy reason flagged on each asset
+2. Rewrite the flagged copy in third person where possible (replace "your child" with "children" or "kids")
+3. Submit the rewritten assets for re-review
+4. If the original asset stays stuck in policy review for more than a week, duplicate the asset group with the rewritten copy and submit the duplicate fresh
+5. The duplicate often clears when the original stays flagged because policy review is asset-specific, not query-specific
+
+Fixing a policy-throttled asset group often unlocks 20-30% more impression share immediately. Run a policy audit on every PMax campaign before making any other optimization changes.
+
+## PMax Hidden Spend Awareness
+
+PMax search term reports only show 45-50% of your actual spend on search queries. The remaining 50-55% goes to a bucket Google calls "Other search terms" or "Other," and those terms are not visible to the advertiser.
+
+This has two practical implications.
+
+First, you cannot optimize what you cannot see. The hidden bucket caps how much waste cleanup is possible in PMax. Even with aggressive negative keyword management on the visible terms, you cannot prune the half of spend that is invisible.
+
+Second, the visible terms must be aggressively pruned because they are the only ones controllable. Every visible junk term costs you twice: once in the wasted spend on that term, and once in training the algorithm to find more terms like it. The hidden bucket likely contains similar junk because the algorithm is learning from the same signal.
+
+The practical move: review the visible search terms weekly. Build aggressive negative keyword lists. Apply them at the account level via shared negative lists since PMax does not support campaign-level negatives directly. Accept that you can only control a portion of PMax spend and factor that into your evaluation of the channel.
+
+If PMax performance degrades and your visible search terms look clean, the cause is almost certainly in the hidden bucket. Your options are limited: tighten audience signals, reduce budget, restrict geographic targeting, or pause the campaign and rebuild with stronger guardrails.
+
+## AI Max as a Keyword Discovery Engine
+
+AI Max Search (Performance Max for Search) is most valuable when treated as a keyword discovery tool, not as a primary conversion driver. The campaign's expanded matching surfaces converting search terms you would never have thought to bid on. Mine those terms, validate them, and promote the winners to dedicated Search campaigns at exact match for tighter bid control.
+
+The workflow:
+
+1. Launch AI Max with broad seed terms in your category
+2. Let the algorithm run for 2-4 weeks while you mine the search terms report weekly
+3. Categorize converting terms into tiers:
+   - Validated converters (3+ conversions): pull into dedicated Search campaign at exact match
+   - Emerging converters (1-2 conversions): keep in AI Max for further validation
+   - Discovery terms (zero conversions but high impressions): monitor weekly
+4. Add aggressive negatives for off-intent themes that appear in the report
+5. As your dedicated Search campaign matures, AI Max becomes a feeder for new discoveries while the Search campaign captures the validated demand at lower CPCs
+
+This approach uses each campaign type for what it does best. AI Max for breadth and discovery. Search for precision and efficiency. Running them in parallel with deliberate handoff between them produces better account-wide CPA than running either one in isolation.
+
+The biggest mistake is treating AI Max as a set-and-forget conversion driver. Without active search term mining, AI Max drifts toward broad, expensive, low-intent queries and the CPA degrades over time.
+
+## The Junk Traffic Signature in PMax
+
+PMax can quietly dump budget on bot or low-quality Display network traffic that looks like clicks but never converts. The signature is recognizable once you know what to look for.
+
+The pattern: very low CPC (around $0.05) combined with high CTR (4-6%) and zero conversions, concentrated in specific geographic regions. Real human traffic from search does not look like this. A $0.05 CPC with 5% CTR and no conversions across hundreds of clicks is almost always bot or junk Display inventory.
+
+The diagnostic: pull the location report from each PMax campaign and look for geographic regions where spend is meaningful, CPC is unusually low, CTR is unusually high, and conversions are zero. These regions are your suspects.
+
+The fix: exclude those locations from the campaign entirely rather than letting the algorithm continue to dump budget there. PMax will not self-correct because the algorithm is rewarded for clicks, and the junk traffic produces clicks reliably.
+
+Run this diagnostic monthly on every PMax campaign. New junk sources appear regularly as bot networks rotate inventory. Treat geographic location exclusions as an ongoing hygiene task, not a one-time setup.
+
+The deeper issue is that PMax's broad delivery across networks (Search, Display, YouTube, Gmail, Discover) means any single asset group can be serving multiple traffic types simultaneously. The location report is one of the few diagnostic tools that surfaces the junk because the bot networks tend to concentrate geographically.
+
+## Bid Strategy Sequencing for New Campaigns
+
+New campaigns with zero conversion history should not start on Target CPA or Target ROAS. The algorithm has no signal to optimize against, and it will either under-bid (refusing to spend) or over-bid (burning budget without learning).
+
+The phased approach for new campaigns:
+
+Phase 1 (Days 1-30): Maximize Clicks with a max CPC cap, or Maximize Conversions without a target. The goal is data collection. You are buying conversion history that the algorithm can later optimize against. Set a CPC cap that reflects your market (look at competitor auction insights or planner estimates) to prevent runaway bids.
+
+Phase 2 (Days 30-60): Once you have 15-20 conversions, switch to Maximize Conversions or Target CPA at 10-20% above your average CPA from Phase 1. Starting above your real target gives the algorithm room to learn without immediately restricting delivery.
+
+Phase 3 (Day 60+): Gradually tighten Target CPA by 10-15% increments every 2 weeks until you reach your true target. Aggressive jumps cause the algorithm to severely restrict impressions because the new target requires throwing out most of what it learned.
+
+The common failure mode: setting Target CPA on a new campaign because you saw a competitor recommend it, then watching the campaign spend 2% of budget at $0.50 CPCs in a $10 CPC market. The algorithm interprets the tight target as "do not bid unless you can convert at this exact cost," and it refuses to bid because it has no data showing it can hit the target.
+
+Bid strategy is a journey, not a starting position. Start loose, gather data, then tighten.
+
+## Location and Language Targeting Defaults
+
+Google's default location targeting setting is "Presence or interest: People in, regularly in, or who show interest in your included locations." This sends ads to people anywhere in the world who Google thinks might be interested in your target geography. For most accounts, this is not what you want.
+
+The result: clicks from users in countries you do not serve, researching topics related to your target market but unable to actually buy from you. Form submissions from junk traffic. Inflated CTRs that mask poor commercial intent. CPA degradation that looks like a market problem but is actually a targeting problem.
+
+The fix: change location targeting to "Presence: People in or regularly in your included locations." This restricts ads to users physically located in your target geography. You will see impression volume drop, but conversion volume should stay flat or improve because you are removing junk traffic.
+
+Run the same check on language targeting. The default is often "All languages" or includes languages you do not serve. Set language targeting explicitly to the languages you can support, and add foreign-language negative keywords as a secondary filter (users with English browser settings sometimes search in other languages, and the negative keywords catch what the language setting misses).
+
+These two settings are five-minute fixes that can produce 20-40% CPA improvement on accounts where they have been left at default. Audit them on every campaign before making any other optimization changes.
+
+## The Search Partners Attribution Fix
+
+Google search partner traffic (search engines that license Google's results, like AOL, Ask.com, and various niche search sites) is real paid traffic, but it often gets misclassified by CRMs as referral traffic. The referrer URL contains a string like syndicatedsearch.goog instead of google.com, and CRMs default to treating non-Google referrers as Referrals rather than Paid Search.
+
+The result: a meaningful portion of your paid Google Ads conversions get attributed to "Referral" in your CRM, which inflates the apparent performance of organic and referral channels while understating your paid Google performance. Budget decisions based on this attribution will favor channels that are not actually driving the volume.
+
+The fix has two parts:
+
+1. CRM workflow: build a workflow triggered on contact creation that checks the Last Referrer URL for syndicatedsearch.goog (or your platform's search partner pattern). If matched, auto-reclassify the Original Source to Paid Search > Search Partner. This catches new contacts going forward.
+
+2. Historical backfill: run a one-time export of contacts whose Last Referrer URL matches the search partner pattern. Manually reclassify those records in the CRM so historical reporting reflects accurate attribution.
+
+Do not disable search partners as a workaround. The traffic is real and often converts at lower CPCs than core Google Search. The issue is the attribution plumbing, not the channel quality. Fix the plumbing and let the volume flow.
+
+After implementing the fix, expect your reported paid Google Ads contribution to increase by 5-15% as the misattributed traffic moves into the correct bucket. Adjust budget allocation accordingly.
