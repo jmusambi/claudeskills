@@ -566,3 +566,23 @@ Video platforms are showing up in AI-generated answers more than most people rea
 ### New Metrics for AI Visibility
 
 Traditional traffic metrics do not capture the full picture anymore. Track how often your brand gets mentioned in AI summaries. Track how far down the page your organic link appears after AI answers push results down. Track whether zero-click impressions correlate with later branded search volume. A page can generate zero clicks from AI but still drive branded searches days later when the user remembers seeing your name in the AI answer.
+
+## Location Landing Pages vs Blog Content for Conversion
+
+Not all content captures intent equally. In programs that serve customers across many geographic markets, location-specific landing pages consistently convert to the next funnel step at a far higher rate than blog content. The gap is large enough that it should change how you allocate content effort.
+
+The reason is intent alignment. Someone reading a blog post is usually in research mode, several steps from a decision. Someone who lands on a page built around their specific location is typically searching for a provider or service in that location right now. The location page meets a high-intent searcher with exactly what they came for, while the blog post meets a low-intent reader with information. The conversion rates reflect that difference.
+
+This makes programmatic location-page coverage one of the higher-leverage content plays available to a multi-market business. Each page targets the same high-intent pattern (service plus location) and captures searchers at the moment they are looking to act.
+
+How to build the play:
+
+1. Identify the markets you serve and rank them by search demand and business priority
+2. Build a templated location page structure that you can populate per market: a headline that names the location, locally relevant proof or context, and a clear path to your conversion step
+3. Make each page genuinely specific to its location rather than a find-and-replace of the city name, because thin duplicated pages get penalized and convert worse
+4. Prioritize coverage in your highest-demand and highest-conversion markets first
+5. Track conversion rate to the next funnel step by page type so you can prove the location-page advantage in your own data and justify continued investment
+
+A caution worth holding: location pages work because they match high commercial intent, which means the quality bar matters. A large volume of thin, near-identical pages can hurt you in search and erodes the very intent match that makes the play work. Build fewer, better location pages in markets that matter before scaling to a long tail of low-demand markets.
+
+The strategic point: blog content has its place in awareness and discovery, but when you need content that converts, intent-matched location pages built for searchers ready to act will outperform informational posts by a wide margin. Allocate content effort accordingly.

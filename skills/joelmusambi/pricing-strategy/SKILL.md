@@ -430,3 +430,21 @@ Discounting without getting something in return trains buyers to always negotiat
 - [ ] Review and update pricing quarterly based on market data
 
 Pricing is not a one-time decision. It is a continuous optimization process. The companies that treat pricing as a strategic lever and test aggressively will capture significantly more revenue from the same market than those that set a price and forget it.
+
+## The Discount Code Leakage Problem
+
+A promo code launched for a single campaign rarely stays contained. Through shared tracking templates, surfaced site-wide offers, and reused UTM parameters, a discount meant for one audience tends to spread across the entire program. This is discount code leakage, and it creates a measurement problem that can quietly distort your unit economics.
+
+The visible effect is a volume lift. Once the discount is surfaced more broadly, more leads convert, and the numbers look good. The hidden effect is the one that matters: discounted leads may convert to paying customers at a different rate than full-price leads, and if the code has leaked across campaigns, you have lost the ability to cleanly measure that difference.
+
+The risk is specific. A discount can lower your cost per lead while also lowering the rate at which those leads become paying customers. That combination looks like an efficiency win on a cost-per-lead basis and can actually be a loss on an effective-CAC basis. If the code has spread program-wide, you cannot isolate which conversions were discount-driven, so you cannot tell whether the promo improved or damaged your economics.
+
+The discipline:
+
+1. Tag promo-driven conversions distinctly so they can always be separated from full-price conversions, even when the code spreads
+2. Track the downstream paying-conversion rate of discounted leads separately from non-discounted leads
+3. Do not declare a promo a success on volume or cost-per-lead alone. Wait until you can compare the paying rate of discounted versus full-price cohorts
+4. Monitor for leakage actively. Check whether the promo parameter is appearing in campaigns it was never meant for, which is the signal that your measurement is about to get muddy
+5. Decide deliberately whether program-wide surfacing of the discount is something you want. Sometimes it is. But it should be a choice, not an accident discovered in the data later
+
+The broader principle: a discount is a pricing decision, and every pricing decision needs its downstream effect measured, not just its immediate volume effect. The teams that get burned are the ones that watch cost-per-lead drop, scale the offer, and only later discover the discounted cohort pays at a lower rate. Isolate the cohort, measure the paying rate, then decide.

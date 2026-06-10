@@ -535,3 +535,27 @@ A tag management container is like a codebase — without discipline, it accumul
 **Do not publish all changes at once:** If you have been accumulating changes for weeks, resist the temptation to publish everything in one batch. Publish incrementally. Test each change in preview mode. Verify in a staging environment. Then publish to production. This discipline saves you from the nightmare of a broken container with no clear cause.
 
 **Always test in preview and debug mode first:** Every tag management system has a preview or debug mode that lets you verify which tags fire, which triggers activate, and what data is passed — without affecting live visitors. Use it for every single change, no matter how small. The cost of testing is minutes. The cost of a broken tracking setup is weeks of lost data.
+
+## Self-Verifying Report Build Scripts
+
+Any report you rebuild on a recurring cadence is a report you will eventually get wrong. Numbers shift between data pulls, schemas change, a category gets added, a filter silently drops rows. The defense is to build verification directly into the script that generates the report, so the build fails loudly when the numbers do not reconcile rather than producing a clean-looking report that is quietly wrong.
+
+The core idea is to treat your report build like production code and add assertions that must pass before the output is considered valid. If an assertion fails, the script stops and tells you exactly which check broke.
+
+The checks that matter most:
+
+1. Component sums must equal the total. If you report conversions broken down by channel, the channel counts must sum to the reported total. Assert it.
+2. Every breakdown of the same total must reconcile to that total. If you show the same conversions split by first-touch and again by last-touch, both breakdowns must sum to the same number. Assert both.
+3. Chart data must match table data. The values feeding a chart and the values in the corresponding table should come from the same source and reconcile. A chart that disagrees with its own table is a common and embarrassing error.
+4. Per-item metrics must be calculated and checked individually, never inferred from an aggregate. Print every per-item value the script computes so you can eyeball it.
+
+The rule that prevents the most damage: never claim an aggregate without a per-item check behind it. A statement like "every campaign is under the target cost" must be backed by a loop that checks each campaign individually and confirms it, not by a glance at a blended average. Blended averages hide outliers. The per-item check catches them.
+
+How to implement:
+
+1. After computing your totals, add assertion statements that verify each reconciliation rule before any output is generated
+2. Have the script print every per-item metric it calculates, so the detail is visible on every run
+3. Make a failed assertion stop the build entirely. A report that cannot verify its own numbers should not be produced
+4. Keep the verification logic in the script itself, not in a separate manual checklist, so it runs automatically every time
+
+The payoff: this discipline turns a category of silent, credibility-destroying errors into loud, immediate, fixable failures. A stakeholder finding a number that does not add up costs you far more trust than a build that failed on your own machine and got fixed before anyone saw it. Build the checks in once and every future iteration of the report inherits the protection.
